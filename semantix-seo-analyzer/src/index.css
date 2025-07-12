@@ -1,0 +1,48 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* WordPress admin compatibility */
+#semantix-root {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #1d2327;
+}
+
+/* Reset WordPress admin styles */
+#semantix-root * {
+  box-sizing: border-box;
+}
+
+#semantix-root button {
+  font-family: inherit;
+}
+
+#semantix-root input,
+#semantix-root select,
+#semantix-root textarea {
+  font-family: inherit;
+}
+
+/* Custom scrollbar */
+#semantix-root ::-webkit-scrollbar {
+  width: 8px;
+}
+
+#semantix-root ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#semantix-root ::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+#semantix-root ::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Ensure full height */
+#semantix-root {
+  min-height: 100vh;
+}
