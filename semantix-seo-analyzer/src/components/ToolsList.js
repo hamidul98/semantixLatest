@@ -35,7 +35,7 @@ const ToolsList = ({ onNavigateToEntityExplorer, onNavigateToTopicCluster }) => 
   return (
     <div className="p-8">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8 text-center">Tools Lists</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-8 text-center">Tools List</h1>
         
         <div className="space-y-12">
           {toolCategories.map((category, categoryIndex) => (
