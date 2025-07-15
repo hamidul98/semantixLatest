@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChevronDown, ChevronUp, Brain } from 'lucide-react';
+import ThemeToggle from './ThemeToggle';
 
 interface SidebarProps {
   activeView: string;
@@ -44,7 +45,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeView, onViewChange }) => {
   ];
 
   return (
-    <div className="w-64 bg-gradient-to-b from-yellow-400 to-yellow-500 text-gray-800 flex flex-col shadow-lg">
+    <div className="w-64 bg-gradient-to-b from-yellow-400 to-yellow-500 dark:from-gray-800 dark:to-gray-900 text-gray-800 dark:text-gray-200 flex flex-col shadow-lg">
       <div className="p-6 border-b border-yellow-600">
         <div className="flex items-center space-x-3">
           <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center">
@@ -99,6 +100,9 @@ const Sidebar: React.FC<SidebarProps> = ({ activeView, onViewChange }) => {
           ))}
         </ul>
       </nav>
+      <div className="p-4 border-t border-yellow-600 mt-auto">
+        <ThemeToggle />
+      </div>
     </div>
   );
 };
